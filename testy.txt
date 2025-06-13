@@ -1,3 +1,3 @@
-curl "https://organic-fortnight-69575jvxqj5624rpw-8000.app.github.dev/api/" \
+curl "https://tds-assistant.vercel.app/api/" \
   -H "Content-Type: application/json" \
   -d "{\"question\": \"Should I use gpt-4o-mini which AI proxy supports, or gpt3.5 turbo?\"}"
