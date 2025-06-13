@@ -72,5 +72,5 @@ async def test():
     return {"response": "Test Done"}
 
 @app.get("/")
-async def test(): 
+async def home(): 
     return {"response": "Who are u?"}
