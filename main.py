@@ -1,4 +1,8 @@
 from fastapi import FastAPI, HTTPException
+from fastapi import Query
+from fastapi.middleware.cors import CORSMiddleware
+import json
+
 from pydantic import BaseModel
 from pinecone import Pinecone
 from pinecone_plugins.assistant.models.chat import Message
@@ -66,3 +70,6 @@ async def process_query(request: QueryRequest):
 @app.get("/api/test")
 async def test(): 
     return {"response": "Test Done"}
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)    
