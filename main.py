@@ -536,18 +536,18 @@ HTML_TEMPLATE = """
                 <div class="message-content">${content}</div>
             `;
             
-            if (links && links.length > 0) {
+            if (Array.isArray(links) && links.length > 0) {
                 messageHTML += `
                     <div class="links-section">
                         <div class="links-title">Related Links</div>
                         ${links.map(link => `
                             <a href="${link.url}" target="_blank" class="link-item">
-                                ${link.title}
+                                ${link.url.length > 50 ? link.url.substring(0, 47) + '...' : link.url}
                             </a>
                         `).join('')}
                     </div>
                 `;
-            }
+        }
             
             messageDiv.innerHTML = messageHTML;
             chatMessages.appendChild(messageDiv);
