@@ -54,7 +54,7 @@ HTML_TEMPLATE = """
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            background-color: #2C2F33;
+            background-color: #000000;
             color: #ffffff;
             height: 100vh;
             overflow: hidden;
@@ -66,13 +66,13 @@ HTML_TEMPLATE = """
             height: 100vh;
             max-width: 768px;
             margin: 0 auto;
-            background-color: #2C2F33;
+            background-color: #000000;
         }
 
         .header {
             padding: 20px;
             border-bottom: 1px solid #262626;
-            background-color: #2C2F33;
+            background-color: #000000;
         }
 
         .header h1 {
@@ -85,7 +85,7 @@ HTML_TEMPLATE = """
             flex: 1;
             overflow-y: auto;
             padding: 0;
-            background-color: #2C2F33;
+            background-color: #000000;
         }
 
         .chat-messages::-webkit-scrollbar {
@@ -107,7 +107,7 @@ HTML_TEMPLATE = """
         }
 
         .message.user {
-            background-color: #2C2F33;
+            background-color: #000000;
         }
 
         .message.assistant {
@@ -189,7 +189,7 @@ HTML_TEMPLATE = """
         .input-section {
             padding: 20px;
             border-top: 1px solid #262626;
-            background-color: #2C2F33;
+            background-color: #000000;
         }
 
         .input-container {
